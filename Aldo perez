@@ -1,0 +1,74 @@
+Repetir 
+     Escribir "Bienvenido!, como te llamas?"
+	 leer nombre
+	 Escribir "Introduzca el nombre de a quien sera su pedido o mensaje? (Nombre completo) "
+	 leer nombres
+	 escribir "buenos dias " nombre " Que se le ofrece hacer en este momento?" 
+	 escribir " 1- pedir servicio de limpieza"
+	 escribir " 2- pedir comida"
+	 escribir " 3- informes sobre su calendario "
+	 escribir " 4- enviar una queja " 
+	 Escribir " 5- Cambiar datos del inicio"
+	 Escribir "cualquier otro numero - salir"
+	 leer num
+	 Segun num Hacer
+		1:
+			escribir "introdusca el numero de su habitacion"
+			leer nh
+			Escribir "Entendido, la habitacion #" nh " ya a sido reportada con el personal de limpieza"
+			
+		2:
+			escribir "El menu es"
+			Escribir "1- Huevos al gusto"
+			Escribir "2- Hamburguesas"
+			Escribir "3- Sandwich"
+			Escribir "escoja la opcion que desea"
+			leer nh
+			Segun nh Hacer
+				1:
+					Escribir "escriba su pedido y cuantas ordenes"
+					leer pedido
+					Escribir "En un momento les llegara"
+				2:
+					Escribir "escriba su pedido y cuantas ordenes"
+					leer pedido
+					Escribir "En un momento les llegara"
+				3:
+					Escribir "escriba su pedido y cuantas ordenes"
+					leer pedido
+					Escribir "En un momento les llegara"
+				De Otro Modo:
+					Escribir "el numero no es valido"
+			Fin Segun
+		3:
+			escribir " introdusca el numero 6770123 para comprovar que no es un robot"
+			leer key
+			Si key = 6770123 Entonces
+				escribir " su calendario a sido enviado al dispositivo de servicio incluido en la habitacion"
+			SiNo
+				escribir " La clave es incorrecta!!!"
+			Fin Si
+			
+			
+		4:  escribir "A quien va dirijido su mensaje?"
+			Escribir " 1- Al personal del lugar"
+			Escribir " 2- Al hotel (habitacion o cualquier instalacion dentro del hotel) "
+			leer dest
+			Segun dest Hacer
+				1:
+					Escribir "escriba su mensaje"
+					leer mens
+					escribir "Muchas gracias por su reporte"
+				2:
+					Escribir "escriba su mensaje"
+					leer mens
+					escribir "Muchas gracias por su reporte"
+				De Otro Modo:
+					Escribir "Gracias por preferirnos"
+			Fin Segun
+			
+			
+		De Otro Modo:
+			escribir "Estamos a sus ordenes"
+	Fin Segun
+ Hasta Que num <> 5
